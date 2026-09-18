@@ -1,0 +1,14 @@
+{
+    "data_proc": "20260914",
+    "hora_proc": "131354",
+    "cliente": "544466",
+    "meio_pagamento": "PIX",
+    "codigo_metodo": 0,
+    "valor_proc": 740.7,
+    "taxa_mdr": 0,
+    "valor_mdr": 0,
+    "valor_credito": 740.7,
+    "data_credito": "20260914",
+    "programa_c_executado": false,
+    "erro_programa_c": "Command failed: \"C:\\Users\\levia\\OneDrive\\Desktop\\ONG_Pet_Projeto1_corrigido_v5\\Projeto1\\cprogram\\processamento.exe\" \"544466\" \"740.70\" \"0\"\n'C:\\Users\\levia\\OneDrive\\Desktop\\ONG_Pet_Projeto1_corrigido_v5\\Projeto1\\cprogram\\processamento.exe' foi bloqueado pela pol�tica do Device Guard da sua organiza��o.\r\nEntre em contato com o respons�vel pelo suporte para obter mais informa��es.\r\n"
+}

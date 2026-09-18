@@ -1,0 +1,14 @@
+{
+    "data_proc": "20260914",
+    "hora_proc": "164312",
+    "cliente": "123456",
+    "meio_pagamento": "PIX",
+    "codigo_metodo": 0,
+    "valor_proc": 74.9,
+    "taxa_mdr": 0,
+    "valor_mdr": 0,
+    "valor_credito": 74.9,
+    "data_credito": "20260914",
+    "programa_c_executado": true,
+    "saida_programa_c": "Codigo: 123456\r\nValor: 74.90\r\nMetodo: 0"
+}
