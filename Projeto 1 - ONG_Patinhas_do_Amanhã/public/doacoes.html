@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doações | Patinhas do Amanhã</title>
+  <meta name="description" content="Faça uma doação para a Patinhas do Amanhã e ajude a resgatar, tratar e encontrar um lar para cães e gatos. Veja o impacto da sua contribuição e as formas de doar.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Zilla+Slab:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.svg" alt="Logotipo da Patinhas do Amanhã" class="logo">
+        <span class="logo-text">Patinhas do Amanhã</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+		            <li><a href="doacoes.html" class="active">Doações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <span class="eyebrow">Apoie Nossa Causa</span>
+        <h1>Faça uma Doação</h1>
+        <p>Cada doação ajuda a resgatar, tratar e encontrar um lar para mais um animal. Veja abaixo o impacto da sua contribuição e as formas de doar.</p>
+      </div>
+    </section>
+
+    <section class="section-tint">
+      <div class="container">
+        <span class="eyebrow">Formas de Doar</span>
+        <h2>Como Contribuir</h2>
+
+        <div class="donation-card donation-form-card">
+          <form id="donation-form" action="/pagto" method="POST">
+            <fieldset class="payment-options">
+              <legend>Escolha a forma de doar</legend>
+              <label><input type="radio" name="tipo" value="0" required> PIX</label>
+              <label><input type="radio" name="tipo" value="1"> Débito</label>
+              <label><input type="radio" name="tipo" value="2"> Crédito</label>
+            </fieldset>
+            <label for="donor-code">Código do benfeitor (6 dígitos)</label>
+            <input type="text" id="donor-code" name="codigo" inputmode="numeric" maxlength="6" placeholder="Ex.: 123456" required>
+            <p id="code-error" class="form-error" role="alert" hidden>Digite um código com exatamente 6 números.</p>
+            <label for="donation-value">Valor da doação (R$)</label>
+            <input type="number" id="donation-value" name="valor" min="0.01" step="0.01" placeholder="Ex.: 50.00" required>
+            <button type="submit" class="btn btn-primary">Doar</button>
+          </form>
+          <div id="donation-success" class="form-success" role="status" hidden>
+            <p>Obrigado pela sua doação!</p>
+            <button type="button" id="new-donation-button" class="btn btn-primary">Nova doação</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-to-help">
+      <div class="container">
+        <span class="eyebrow">Outras Formas de Ajudar</span>
+        <h2>Também Aceitamos Doações de Materiais</h2>
+        <ul>
+          <li>Ração para cães e gatos, filhotes ou adultos</li>
+          <li>Cobertores, toalhas e caminhas</li>
+          <li>Coleiras, guias e caixas de transporte</li>
+          <li>Medicamentos e produtos de higiene veterinária</li>
+          <li>Areia higiênica para gatos</li>
+        </ul>
+        <p style="margin-top: 20px;">Quer ajudar sem doar dinheiro? Conheça o trabalho de resgate, cuidado e adoção na página de <a href="projetos.html">Projetos</a>, ou envie uma mensagem pela página de <a href="contato.html">Contato</a> para se tornar voluntário.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Logotipo da Patinhas do Amanhã" class="logo logo-footer">
+        <p><strong>Patinhas do Amanhã</strong></p>
+        
+      </div>
+      <div class="footer-links">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+		  <li><a href="doacoes.html">Doações</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contato</h3>
+        <p>institutopatinhasdoamanha@gmail.com</p>
+        <p>WhatsApp (11) 99890-3090</p>
+        <p>São Paulo, SP</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Patinhas do Amanhã. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/doacoes.js"></script>
+</body>
+</html>
